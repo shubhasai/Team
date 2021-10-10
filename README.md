@@ -1,8 +1,7 @@
 
 ## Title: TEAM
-## Domain: Open Inovation / Education
+## Domain: Education
 ## Team: Individual (Shubhasai Mohapatra)
-## Tech used
 
 ## Features:
 1. Connecting with people
@@ -10,6 +9,7 @@
 3. Post
 4. Passwordless Auth
 5. Upcoming Hackathon Details
+6. Self Learning with better Experience
 
 
 In Team Following Technologies are Used:
@@ -23,5 +23,6 @@ In Team Following Technologies are Used:
 ## Installation
 
 [![N|Solid](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HeroHomepage_2880x1200.max-100x100.jpg)](https://github.com/shubhasai/Team/raw/master/app-debug.apk)
+
 Click The Above Button To Download
 
