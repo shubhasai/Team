@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homescreen.PersonFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:gravity = "center"
+            android:background="@color/white"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp">
+            <Button
+                android:text="Android"
+                app:icon="@drawable/ic_android"
+                style="@style/ToggleButtonWithIconOnly"
+                android:id="@+id/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/web"
+                style="@style/ToggleButtonWithIconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" WEB"
+                app:icon="@drawable/ic_web" />
+            <Button
+                android:text="Ai/ml"
+                app:icon="@drawable/ic_ai"
+                style="@style/ToggleButtonWithIconOnly"
+                android:id="@+id/aiml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:text="Blockchain"
+                style="@style/ToggleButtonWithIconOnly"
+                app:icon="@drawable/ic_blockchain"
+                android:id="@+id/blockchain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#E91E1E"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No more data found"/>
+    </LinearLayout>
+</ScrollView>

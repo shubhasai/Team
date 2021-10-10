@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_hackathon"
+        android:id="@+id/hackathonFragment"
+        android:title="Hackathon"/>
+    <item android:icon="@drawable/ic_post"
+        android:id="@+id/postFragment"
+        android:title="Post"/>
+    <item android:icon="@drawable/ic_home"
+        android:id="@+id/personFragment"
+        android:title="Home"/>
+    <item android:icon="@drawable/ic_team"
+        android:id="@+id/groupFragment"
+        android:title="Teams"/>
+    <item android:icon="@drawable/ic_learn"
+        android:id="@+id/learnFragment"
+        android:title="Learn"/>
+</menu>

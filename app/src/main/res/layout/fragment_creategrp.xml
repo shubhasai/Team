@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreategrpFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:src="@drawable/ic_about"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/input_text_background"
+            android:layout_marginTop="10dp"
+            android:id="@+id/grpname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+        <EditText
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/input_text_background"
+            android:layout_marginTop="10dp"
+            android:id="@+id/grpdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+        <ProgressBar
+            android:id="@+id/uploading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/buttonsave"
+            android:layout_width="97dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signin"
+            android:text="Save" />
+
+</LinearLayout>

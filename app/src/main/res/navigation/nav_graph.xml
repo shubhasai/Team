@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/personFragment">
+
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="in.vikins.team.homescreen.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" >
+        <action
+            android:id="@+id/action_personFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_learnFragment"
+            app:destination="@id/learnFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_hackathonFragment"
+            app:destination="@id/hackathonFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_groups"
+            app:destination="@id/groups" />
+        <action
+            android:id="@+id/action_personFragment_to_mypostFragment"
+            app:destination="@id/mypostFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_aboutusFragment"
+            app:destination="@id/aboutusFragment" />
+        <action
+            android:id="@+id/action_personFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="in.vikins.team.postscreen.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="in.vikins.team.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="in.vikins.team.chatscreen.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="userid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="in.vikins.team.LearnFragment"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_learnFragment_to_playlistplayerFragment"
+            app:destination="@id/playlistplayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hackathonFragment"
+        android:name="in.vikins.team.hackathonscreen.HackathonFragment"
+        android:label="fragment_hackathon"
+        tools:layout="@layout/fragment_hackathon" >
+        <action
+            android:id="@+id/action_hackathonFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mypostFragment"
+        android:name="in.vikins.team.MypostFragment"
+        android:label="fragment_mypost"
+        tools:layout="@layout/fragment_mypost" />
+    <fragment
+        android:id="@+id/aboutusFragment"
+        android:name="in.vikins.team.AboutusFragment"
+        android:label="fragment_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
+    <fragment
+        android:id="@+id/groupchatFragment"
+        android:name="in.vikins.team.GroupchatFragment"
+        android:label="fragment_groupchat"
+        tools:layout="@layout/fragment_groupchat" >
+        <argument
+            android:name="groupid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupchatFragment_to_selectmemberFragment"
+            app:destination="@id/selectmemberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectmemberFragment"
+        android:name="in.vikins.team.SelectmemberFragment"
+        android:label="fragment_selectmember"
+        tools:layout="@layout/fragment_selectmember" >
+        <argument
+            android:name="groupname"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/creategrpFragment"
+        android:name="in.vikins.team.CreategrpFragment"
+        android:label="fragment_creategrp"
+        tools:layout="@layout/fragment_creategrp" >
+        <action
+            android:id="@+id/action_creategrpFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="in.vikins.team.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" >
+        <action
+            android:id="@+id/action_groupFragment_to_groupchatFragment"
+            app:destination="@id/groupchatFragment" />
+        <action
+            android:id="@+id/action_groupFragment_to_creategrpFragment"
+            app:destination="@id/creategrpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistplayerFragment"
+        android:name="in.vikins.team.playlistplayerFragment"
+        android:label="fragment_playlistplayer"
+        tools:layout="@layout/fragment_playlistplayer" >
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </fragment>
+</navigation>
