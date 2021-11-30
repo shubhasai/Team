@@ -1,7 +1,6 @@
 
 ## Title: TEAM
 ## Domain: Education
-## Team: Individual (Shubhasai Mohapatra)
 
 ## Features:
 1. Connecting with people
